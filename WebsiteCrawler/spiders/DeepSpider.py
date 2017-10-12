@@ -71,7 +71,9 @@ def main():
         })
 
         process.crawl(DeepSpider, MAIN_URL = MAIN_URL, PROJECT_NAME = PROJECT_NAME)
+        print('Scraping urls started at: ' + str(datetime.datetime.now()))
         process.start()
+        print('Scraping urls finished at: ' + str(datetime.datetime.now()))
 
 if __name__ == '__main__':
     main()
